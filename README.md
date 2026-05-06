@@ -7,7 +7,7 @@
 **Offensive security skills for Claude — drop-in `SKILL.md` files that turn Claude into a context-aware red team operator.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-45-red.svg)](#skill-index)
+[![Skills](https://img.shields.io/badge/skills-58-red.svg)](#skill-index)
 [![Categories](https://img.shields.io/badge/categories-13-orange.svg)](#categories)
 [![Stars](https://img.shields.io/github/stars/SnailSploit/claude-red?style=social)](https://github.com/SnailSploit/claude-red)
 [![Forks](https://img.shields.io/github/forks/SnailSploit/claude-red?style=social)](https://github.com/SnailSploit/claude-red/network/members)
@@ -100,7 +100,7 @@ Paste the contents of a `SKILL.md` into a Project's system prompt or prepend to 
 | [Web Application](#web-application) | 16 | OWASP Top 10 + business logic + advanced web bug classes |
 | [Auth & Identity](#auth--identity) | 2 | JWT, OAuth |
 | [Active Directory](#active-directory) | 1 | On-prem AD attack methodology *(expanding)* |
-| [Wireless](#wireless) | 1 | 802.11, WPA2/3, EAP, BLE, Zigbee, sub-GHz *(expanding)* |
+| [Wireless](#wireless) | 13 | 802.11, WPA2/3, EAP, WPS, evil-twin, BLE, Zigbee, Z-Wave, LoRa, sub-GHz |
 | [Cloud](#cloud) | 1 | AWS / Azure / GCP attack paths *(expanding)* |
 | [Mobile](#mobile) | 1 | Android + iOS pentest *(expanding)* |
 | [IoT & Embedded](#iot--embedded) | 1 | Hardware, firmware, RTOS, ICS *(expanding)* |
@@ -163,9 +163,20 @@ Paste the contents of a `SKILL.md` into a Project's system prompt or prepend to 
 
 | Skill | Description |
 |---|---|
-| [`offensive-wifi`](Skills/wireless/offensive-wifi/SKILL.md) | 802.11 — WPA2/3/EAP, KARMA/Mana, KRACK, WPS, BLE, Zigbee, sub-GHz |
-
-> **Note:** Being split into 12 focused skills. See [Roadmap](#roadmap).
+| [`offensive-wifi`](Skills/wireless/offensive-wifi/SKILL.md) | 802.11 overview — entrypoint into the wireless category |
+| [`offensive-wifi-recon`](Skills/wireless/offensive-wifi-recon/SKILL.md) | Adapter selection, monitor mode, multi-band airspace mapping |
+| [`offensive-wpa2-psk`](Skills/wireless/offensive-wpa2-psk/SKILL.md) | Handshake capture, PMKID, hashcat 22000 cracking |
+| [`offensive-wpa3-sae`](Skills/wireless/offensive-wpa3-sae/SKILL.md) | Transition-mode downgrade, Dragonblood, SAE side-channels |
+| [`offensive-wpa-enterprise`](Skills/wireless/offensive-wpa-enterprise/SKILL.md) | 802.1X / EAP attacks, eaphammer evil-twin RADIUS |
+| [`offensive-wps`](Skills/wireless/offensive-wps/SKILL.md) | Pixie Dust, online PIN brute, vendor PIN generators |
+| [`offensive-evil-twin`](Skills/wireless/offensive-evil-twin/SKILL.md) | KARMA, Mana, captive portal, post-association MITM |
+| [`offensive-krack-fragattacks`](Skills/wireless/offensive-krack-fragattacks/SKILL.md) | KRACK + FragAttacks supplicant testing |
+| [`offensive-deauth-disassoc`](Skills/wireless/offensive-deauth-disassoc/SKILL.md) | Targeted/broadcast deauth, PMF awareness, action frames |
+| [`offensive-bluetooth-ble`](Skills/wireless/offensive-bluetooth-ble/SKILL.md) | BLE GATT enum, pairing downgrade, sniffing, MITM |
+| [`offensive-bluetooth-classic`](Skills/wireless/offensive-bluetooth-classic/SKILL.md) | BR/EDR — SDP, SPP, KNOB, BlueBorne, HID spoofing |
+| [`offensive-zigbee-thread-matter`](Skills/wireless/offensive-zigbee-thread-matter/SKILL.md) | 802.15.4 mesh — KillerBee, Touchlink abuse, ZCL command injection |
+| [`offensive-z-wave`](Skills/wireless/offensive-z-wave/SKILL.md) | S0 key derivation flaw, S2 commissioning, hub pivots |
+| [`offensive-lorawan-sub-ghz`](Skills/wireless/offensive-lorawan-sub-ghz/SKILL.md) | LoRaWAN ABP/OTAA, KeeLoq garage doors, fixed-code, TPMS |
 
 ### Cloud
 
